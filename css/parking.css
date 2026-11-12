@@ -1,0 +1,66 @@
+ul li {
+    list-style-type: none;
+}
+
+.imgVehiculo {
+    cursor: pointer;
+    width: 150px;
+}
+
+.container {
+    color: black;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parking-rules {
+    padding: 0;
+}
+
+.parking-rules>.parking-rule {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #FDFEFE;
+    padding: 16px;
+    margin: 12px;
+}
+
+.parking-rule:nth-childNo {
+    border: 2px solid #538cff;
+}
+
+.parking-rule:nth-child(2n) {
+    border: 2px solid #d51c00;
+}
+
+.parking-rule:nth-child(3n) {
+    border: 2px solid #ffd92e;
+}
+
+.parking-rule ul {
+    padding: 0;
+}
+
+.parking-rule li:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.drop-zone {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background: #878787;
+    color: white;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
