@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica7: elementosJS parte 1</title>
+    <!--ENLACES A FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+    body{
+    background-color: black;
+    color: white;
+    
+    font-family:'Oswald', sans-serif;
+    font-size:1.5rem;
+    }
+    button{
+    width: 80px;
+    height: 40px;
+    }
+    </style>
+    <script>
+        function calculaDensidad(){
+        masaTierra=5.972e24; //Kg
+        radioTierra= 6378e3; //KM
+        volumen=(4/3)*Math.PI*radioTierra*radioTierra*radioTierra;
+        densidad = masaTierra/volumen;
+        out=document.getElementById("resultado");
+        out.innerHTML="la densidad de la tierra es: "+ densidad +" Kg/m cúbico";
+    }
+    </script>
+</head>
+<body onload="calculaDensidad()">
+    <h1>Calcula densidad</h1>
+    <p>Este ejemplo implementa el calculo de la densidad de varios planetas</p>
+    <p>la densidad se calcula conociendo los valores de la masa y el volumen del planeta considerandolo una esfera</p>
+    <section id="resultado"></section>
+
+<script>
+    planetas = ["Mercurio","Venus","Tierra"];
+    masasPlanetas = [3.30e23, 4.87e24, 5.97e24];
+    radiosPlanetas = [2439.7 , 6051.8, 6371.0];
+    volumenesPlanetas=[0.0,0.0,0.0];
+    densidadPlanetas=[0.0,0.0,0.0];
+    for (i=0;i<3;i++){
+        volumenesPlanetas[i]=(4/3)*Math.PI*radiosPlanetas[i]*radiosPlanetas[i]*radiosPlanetas[i];
+        densidadPlanetas[i]=masasPlanetas[i]/volumenesPlanetas[i];
+    }
+    
+    /*objetos. Notación JSON Java Script Object Notation. sustituye a XML y XHTML Java2 Enterprise. BD noSQL. MongoDB. BigData. python.*/
+    const sistemaSolar = {
+        planetas:{
+        "0":  {nombre: "Mercurio",
+                masa: 3.30e23,
+                radio: 2439.7,
+                volumen: volumenesPlanetas[0],
+                densidad: densidadPlanetas[0]
+                },
+        "1":  {
+                nombre: "Venus",
+                masa: 4.87e24,
+                radio: 6051.8,
+                volumen:volumenesPlanetas[1],
+                densidad:densidadPlanetas[1]
+                },
+        "2": {
+                nombre: "Tierra",
+                masa: 5.97e24,
+                radio: 6371.0,
+                volumen:volumenesPlanetas[2],
+                densidad:densidadPlanetas[2]   
+                }
+        
+       },
+       meteoritos:
+        {nombre: "Apofis", masa: 1.0, radio1: 1.0, radio2: 1.0},
+       planetoides:
+        {nombre: "Sedna", masa: 1.0},
+       objetosKuiper:
+       {nombre: "Trojan1", masa: 1.0},
+       objetosNubeOr:
+       {nombre: "Halley2", masa: 1.0}
+       }
+
+</script>
+<h1>Cálculo de Densidad usando Array en JS </h1>
+<table border="1">
+    <thead>
+        <td>Planeta</td>
+        <td>Masa en KG</td>
+        <td>Radio en KM</td>
+        <td>Volumen KM cúbicos</td>
+        <td>Densidad KG/M cúbico</td>
+    </thead>
+    <tbody>
+    <script>
+    for (i=0; i<3; i++){
+        document.writeln("<tr>");
+        document.writeln("<td>"+planetas[i]+"</td>");
+        document.writeln("<td>"+masasPlanetas[i]+"</td>");
+        document.writeln("<td>"+radiosPlanetas[i]+"</td>");
+        document.writeln("<td>"+volumenesPlanetas[i]+"</td>");
+        document.writeln("<td>"+densidadPlanetas[i]+"</td>");
+        document.writeln("</tr>");
+    }
+    </script>
+    </tbody>
+</table>
+<h1>Sistema solar usando Objetos en JS</h1>
+<table border="1">
+    <thead>
+        <td>Planeta</td>
+        <td>Masa en Kg</td>
+        <td>Radio en Km</td>
+        <td>Volumen Km cúbicos</td>
+        <td>Densidad Kg/m cúbico</td>
+    </thead>
+    <tbody>
+    <script>
+    for (let i=0; i<3; i++){
+        document.writeln("<tr>");
+        document.writeln("<td>"+sistemaSolar.planetas[i].nombre+"</td>");
+        document.writeln("<td>"+sistemaSolar.planetas[i].masa+"</td>");
+        document.writeln("<td>"+sistemaSolar.planetas[i].radio+"</td>");
+        document.writeln("<td>"+sistemaSolar.planetas[i].volumen+"</td>");
+        document.writeln("<td>"+sistemaSolar.planetas[i].densidad+"</td>");
+        document.writeln("</tr>");
+    }
+    </script>
+    </tbody>
+</table>
+</body>
+</html>
