@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica7: elemetosJS parte 1</title>
+    <!--ENLACES A FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        button {
+            width: 80px;
+            height: 40px;
+        }
+    </style>
+    <script defer>
+        function dibujar() {
+            var canvas = document.getElementById('hojaPapel');
+            var lapiz = canvas.getContext('2d');
+            var imageObj = new Image();
+            imageObj.src = 'images/vivalavida.jpg';
+            // Draw image
+            imageObj.onload = function () {
+                lapiz.drawImage(imageObj, 0, 250);
+            }
+            lapiz.font = '14pt Calibri';
+
+            lapiz.fillText('Hi. en Canvas 2d!', 20, 30);
+
+            lapiz.strokeStyle = '#00ff00';
+
+            lapiz.lineWidth = 3;
+
+            lapiz.beginPath();
+            lapiz.rect(50, 50, 160, 160);
+            lapiz.moveTo(130, 50);
+            lapiz.lineTo(130, 210);
+            lapiz.moveTo(50, 130);
+            lapiz.lineTo(210, 130);
+            lapiz.stroke();
+
+            //Triangulos del primer cuadrante:
+            lapiz.fillStyle = 'black';
+            //triangulo A
+            lapiz.beginPath();
+            lapiz.moveTo(50, 50);
+            lapiz.lineTo(130, 50);
+            lapiz.lineTo(110, 70);
+            lapiz.lineTo(50, 50);
+            lapiz.fill();
+            //triangulo B
+            lapiz.beginPath();
+            lapiz.moveTo(130, 50);
+            lapiz.lineTo(110, 70);
+            lapiz.lineTo(130, 130);
+            lapiz.lineTo(130, 50);
+            lapiz.fill();
+            lapiz.fillStyle = 'gray';
+            //triangulo C
+            lapiz.beginPath();
+            lapiz.moveTo(50, 50);
+            lapiz.lineTo(70, 110);
+            lapiz.lineTo(50, 130);
+            lapiz.lineTo(50, 50);
+            lapiz.fill();
+            //triangulo D
+            lapiz.beginPath();
+            lapiz.moveTo(50, 130);
+            lapiz.lineTo(70, 110);
+            lapiz.lineTo(130, 130);
+            lapiz.lineTo(50, 130);
+            lapiz.fill()
+            //repetir para los 3 cuadrantes restantes
+
+
+            //dibujo de un payaso usando figura geometricas
+
+        }
+    </script>
+</head>
+
+<body onload="dibujar()">
+    <canvas id="hojaPapel" width="1200" height="800" style="border:1px solid #000000;"></canvas>
+</body>
+
+</html>
