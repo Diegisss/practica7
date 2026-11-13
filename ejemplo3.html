@@ -181,6 +181,39 @@
             
             //dibujo de un payaso usando figura geometricas
 
+             // 1. Cabello esponjado de payaso (círculos a los lados)
+            lapiz.fillStyle = 'gray';
+            lapiz.strokeStyle = 'black';
+            lapiz.lineWidth = 2;
+
+            /*cara redonda*/
+            lapiz.beginPath();
+            lapiz.arc(500, 220, 75, 0, Math.PI*2);
+            lapiz.fill();
+
+            /*nariz*/
+            lapiz.fillStyle='red';
+            lapiz.beginPath();
+            lapiz.arc(500, 223, 21, 0, Math.PI * 2);
+            lapiz.fill();
+
+            /*boca*/
+            lapiz.lineCap = 'round'
+            lapiz.beginPath();
+            lapiz.arc(500, 236, 42, 0.25, Math.PI-0.25);
+            lapiz.fill();
+
+            /*parte de adentro de la boca*/
+            lapiz.fillStyle='black';
+            lapiz.beginPath();
+            lapiz.arc(500, 240, 35, 0.28, Math.PI - 0.28);
+            lapiz.fill();
+
+            /*ojos*/
+            lapiz.beginPath();
+            lapiz.ellipse(470,190, 7, 10,0, 0, Math.PI*2);
+            lapiz.ellipse(530,190, 7, 10,0, 0, Math.PI*2);
+            lapiz.fill();
         }
     </script>
 </head>
