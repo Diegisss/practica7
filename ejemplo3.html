@@ -197,6 +197,8 @@
             lapiz.arc(500, 223, 21, 0, Math.PI * 2);
             lapiz.fill();
 
+            
+
             /*boca*/
             lapiz.lineCap = 'round'
             lapiz.beginPath();
@@ -214,6 +216,22 @@
             lapiz.ellipse(470,190, 7, 10,0, 0, Math.PI*2);
             lapiz.ellipse(530,190, 7, 10,0, 0, Math.PI*2);
             lapiz.fill();
+
+            /*pupila*/
+            lapiz.fillStyle='white';
+            lapiz.beginPath();
+            lapiz.arc(468, 185, 3.5, 0, Math.PI*2);
+            lapiz.arc(528, 185, 3.5, 0, Math.PI*2);
+            lapiz.fill();
+
+            /*pomulos*/
+            lapiz.fillStyle = 'rgba(255, 100, 100, 0.35)'
+            lapiz.beginPath();
+            lapiz.ellipse(455, 228, 22, 12, 0, 0, Math.PI * 2);
+            lapiz.ellipse(545, 228, 22, 12, 0, 0, Math.PI * 2);
+            lapiz.fill();
+
+
         }
     </script>
 </head>
