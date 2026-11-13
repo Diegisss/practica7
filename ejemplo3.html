@@ -13,7 +13,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <style>
         body {
-            background-color: black;
+            background-color: white;
             color: white;
 
             font-family: 'Oswald', sans-serif;
@@ -52,6 +52,7 @@
             lapiz.stroke();
 
             //Triangulos del primer cuadrante:
+            //Triangulos de color negro
             lapiz.fillStyle = 'black';
             //triangulo A
             lapiz.beginPath();
@@ -60,6 +61,7 @@
             lapiz.lineTo(110, 70);
             lapiz.lineTo(50, 50);
             lapiz.fill();
+            lapiz.fillStyle='blue';
             //triangulo B
             lapiz.beginPath();
             lapiz.moveTo(130, 50);
@@ -67,7 +69,8 @@
             lapiz.lineTo(130, 130);
             lapiz.lineTo(130, 50);
             lapiz.fill();
-            lapiz.fillStyle = 'gray';
+            //Triangulos del color gris
+            lapiz.fillStyle = 'black';
             //triangulo C
             lapiz.beginPath();
             lapiz.moveTo(50, 50);
@@ -75,16 +78,107 @@
             lapiz.lineTo(50, 130);
             lapiz.lineTo(50, 50);
             lapiz.fill();
+
+            lapiz.fillStyle='red';
             //triangulo D
             lapiz.beginPath();
             lapiz.moveTo(50, 130);
             lapiz.lineTo(70, 110);
             lapiz.lineTo(130, 130);
             lapiz.lineTo(50, 130);
-            lapiz.fill()
+            lapiz.fill();
             //repetir para los 3 cuadrantes restantes
 
+            /*cuadrante 2*/
+            lapiz.fillStyle='black'
+            lapiz.beginPath();
+            lapiz.moveTo(210,50);
+            lapiz.lineTo(132, 50);
+            lapiz.lineTo(152, 70);  
+            lapiz.fill();
 
+            lapiz.fillStyle='red'
+            lapiz.beginPath();
+            lapiz.moveTo(132,50);
+            lapiz.lineTo(152, 70);
+            lapiz.lineTo(132, 132);
+            lapiz.fill();
+
+            lapiz.fillStyle='blue'
+            lapiz.beginPath();
+            lapiz.moveTo(210,130);
+            lapiz.lineTo(188,110);
+            lapiz.lineTo(130,130);
+            lapiz.fill();
+
+            lapiz.fillStyle='black';
+            lapiz.beginPath();
+            lapiz.moveTo(210,50);
+            lapiz.lineTo(188,110);
+            lapiz.lineTo(210,130);
+            lapiz.fill();
+
+            /*cuadrante 3*/
+
+            lapiz.fillStyle='blue';
+            
+            lapiz.beginPath();
+            lapiz.moveTo(132,132);
+            lapiz.lineTo(70,150);
+            lapiz.lineTo(50,132);
+            lapiz.fill();
+
+            lapiz.fillStyle='black';
+            lapiz.beginPath();
+            lapiz.moveTo(50,210);
+            lapiz.lineTo(70, 150);
+            lapiz.lineTo(50,132);
+            lapiz.fill();
+
+            lapiz.beginPath();
+            lapiz.moveTo(130,210);
+            lapiz.lineTo(110,188);
+            lapiz.lineTo(50,210);
+            lapiz.fill();
+
+            lapiz.fillStyle='red';
+            lapiz.beginPath();
+            lapiz.moveTo(130,210);
+            lapiz.lineTo(110,188);
+            lapiz.lineTo(130, 132);
+            lapiz.fill();
+
+            /*cuadrante 4*/
+
+            lapiz.fillStyle='blue';
+            lapiz.beginPath();
+            lapiz.moveTo(132,132);
+            lapiz.lineTo(152,188);
+            lapiz.lineTo(130,210);
+            lapiz.fill();
+
+
+            lapiz.fillStyle='black';
+            lapiz.beginPath();
+            lapiz.moveTo(130,210);
+            lapiz.lineTo(152,188);
+            lapiz.lineTo(210,210);
+            lapiz.fill();
+            
+            lapiz.fillStyle='red';
+            lapiz.beginPath();
+            lapiz.moveTo(210,132);
+            lapiz.lineTo(188,152);
+            lapiz.lineTo(130,132);
+            lapiz.fill();
+
+            lapiz.fillStyle='black';
+            lapiz.beginPath();
+            lapiz.moveTo(210,210);
+            lapiz.lineTo(188,152);
+            lapiz.lineTo(210,132);
+            lapiz.fill();
+            
             //dibujo de un payaso usando figura geometricas
 
         }
