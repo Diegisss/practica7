@@ -30,7 +30,7 @@
             var canvas = document.getElementById('hojaPapel');
             var lapiz = canvas.getContext('2d');
             var imageObj = new Image();
-            imageObj.src = 'images/vivalavida.jpg';
+            imageObj.src = 'images/gento.png';
             // Draw image
             imageObj.onload = function () {
                 lapiz.drawImage(imageObj, 0, 250);
@@ -181,8 +181,18 @@
             
             //dibujo de un payaso usando figura geometricas
 
-             // 1. Cabello esponjado de payaso (círculos a los lados)
-            lapiz.fillStyle = 'gray';
+            lapiz.fillStyle='blue';
+            lapiz.beginPath();
+            lapiz.ellipse(650, 190, 38, 48, 0, 0, Math.PI*2);
+            lapiz.fill();
+
+            lapiz.strokeStyle = 'black';
+            lapiz.beginPath();
+            lapiz.moveTo(650, 240);
+            lapiz.bezierCurveTo(665, 280, 635, 315, 650, 350); // Curva suave en forma de S
+            lapiz.stroke();
+
+            lapiz.fillStyle = 'white';
             lapiz.strokeStyle = 'black';
             lapiz.lineWidth = 2;
 
@@ -190,6 +200,7 @@
             lapiz.beginPath();
             lapiz.arc(500, 220, 75, 0, Math.PI*2);
             lapiz.fill();
+            lapiz.stroke();
 
             /*nariz*/
             lapiz.fillStyle='red';
@@ -197,7 +208,17 @@
             lapiz.arc(500, 223, 21, 0, Math.PI * 2);
             lapiz.fill();
 
-            
+            lapiz.beginPath();
+            lapiz.arc(465, 152, 19, 0, Math.PI * 2);
+            lapiz.arc(445, 165, 19, 0, Math.PI * 2);
+            lapiz.arc(432, 185, 18, 0, Math.PI * 2);
+            lapiz.fill();
+
+            lapiz.beginPath();
+            lapiz.arc(535, 152, 16, 0, Math.PI * 2);
+            lapiz.arc(555, 165, 19, 0, Math.PI * 2);
+            lapiz.arc(568, 185, 18, 0, Math.PI * 2);
+            lapiz.fill();
 
             /*boca*/
             lapiz.lineCap = 'round'
