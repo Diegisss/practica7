@@ -1,0 +1,12 @@
+#bajar, #subir{
+    border-radius: 6px;
+    background: blue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.controles {
+    display: flex;
+}
