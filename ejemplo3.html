@@ -61,7 +61,7 @@
             lapiz.lineTo(110, 70);
             lapiz.lineTo(50, 50);
             lapiz.fill();
-            lapiz.fillStyle='blue';
+            lapiz.fillStyle = 'blue';
             //triangulo B
             lapiz.beginPath();
             lapiz.moveTo(130, 50);
@@ -79,7 +79,7 @@
             lapiz.lineTo(50, 50);
             lapiz.fill();
 
-            lapiz.fillStyle='red';
+            lapiz.fillStyle = 'red';
             //triangulo D
             lapiz.beginPath();
             lapiz.moveTo(50, 130);
@@ -90,100 +90,100 @@
             //repetir para los 3 cuadrantes restantes
 
             /*cuadrante 2*/
-            lapiz.fillStyle='black'
+            lapiz.fillStyle = 'black'
             lapiz.beginPath();
-            lapiz.moveTo(210,50);
+            lapiz.moveTo(210, 50);
             lapiz.lineTo(132, 50);
-            lapiz.lineTo(152, 70);  
+            lapiz.lineTo(152, 70);
             lapiz.fill();
 
-            lapiz.fillStyle='red'
+            lapiz.fillStyle = 'red'
             lapiz.beginPath();
-            lapiz.moveTo(132,50);
+            lapiz.moveTo(132, 50);
             lapiz.lineTo(152, 70);
             lapiz.lineTo(132, 132);
             lapiz.fill();
 
-            lapiz.fillStyle='blue'
+            lapiz.fillStyle = 'blue'
             lapiz.beginPath();
-            lapiz.moveTo(210,130);
-            lapiz.lineTo(188,110);
-            lapiz.lineTo(130,130);
+            lapiz.moveTo(210, 130);
+            lapiz.lineTo(188, 110);
+            lapiz.lineTo(130, 130);
             lapiz.fill();
 
-            lapiz.fillStyle='black';
+            lapiz.fillStyle = 'black';
             lapiz.beginPath();
-            lapiz.moveTo(210,50);
-            lapiz.lineTo(188,110);
-            lapiz.lineTo(210,130);
+            lapiz.moveTo(210, 50);
+            lapiz.lineTo(188, 110);
+            lapiz.lineTo(210, 130);
             lapiz.fill();
 
             /*cuadrante 3*/
 
-            lapiz.fillStyle='blue';
-            
-            lapiz.beginPath();
-            lapiz.moveTo(132,132);
-            lapiz.lineTo(70,150);
-            lapiz.lineTo(50,132);
-            lapiz.fill();
+            lapiz.fillStyle = 'blue';
 
-            lapiz.fillStyle='black';
             lapiz.beginPath();
-            lapiz.moveTo(50,210);
+            lapiz.moveTo(132, 132);
             lapiz.lineTo(70, 150);
-            lapiz.lineTo(50,132);
+            lapiz.lineTo(50, 132);
+            lapiz.fill();
+
+            lapiz.fillStyle = 'black';
+            lapiz.beginPath();
+            lapiz.moveTo(50, 210);
+            lapiz.lineTo(70, 150);
+            lapiz.lineTo(50, 132);
             lapiz.fill();
 
             lapiz.beginPath();
-            lapiz.moveTo(130,210);
-            lapiz.lineTo(110,188);
-            lapiz.lineTo(50,210);
+            lapiz.moveTo(130, 210);
+            lapiz.lineTo(110, 188);
+            lapiz.lineTo(50, 210);
             lapiz.fill();
 
-            lapiz.fillStyle='red';
+            lapiz.fillStyle = 'red';
             lapiz.beginPath();
-            lapiz.moveTo(130,210);
-            lapiz.lineTo(110,188);
+            lapiz.moveTo(130, 210);
+            lapiz.lineTo(110, 188);
             lapiz.lineTo(130, 132);
             lapiz.fill();
 
             /*cuadrante 4*/
 
-            lapiz.fillStyle='blue';
+            lapiz.fillStyle = 'blue';
             lapiz.beginPath();
-            lapiz.moveTo(132,132);
-            lapiz.lineTo(152,188);
-            lapiz.lineTo(130,210);
+            lapiz.moveTo(132, 132);
+            lapiz.lineTo(152, 188);
+            lapiz.lineTo(130, 210);
             lapiz.fill();
 
 
-            lapiz.fillStyle='black';
+            lapiz.fillStyle = 'black';
             lapiz.beginPath();
-            lapiz.moveTo(130,210);
-            lapiz.lineTo(152,188);
-            lapiz.lineTo(210,210);
-            lapiz.fill();
-            
-            lapiz.fillStyle='red';
-            lapiz.beginPath();
-            lapiz.moveTo(210,132);
-            lapiz.lineTo(188,152);
-            lapiz.lineTo(130,132);
+            lapiz.moveTo(130, 210);
+            lapiz.lineTo(152, 188);
+            lapiz.lineTo(210, 210);
             lapiz.fill();
 
-            lapiz.fillStyle='black';
+            lapiz.fillStyle = 'red';
             lapiz.beginPath();
-            lapiz.moveTo(210,210);
-            lapiz.lineTo(188,152);
-            lapiz.lineTo(210,132);
+            lapiz.moveTo(210, 132);
+            lapiz.lineTo(188, 152);
+            lapiz.lineTo(130, 132);
             lapiz.fill();
-            
+
+            lapiz.fillStyle = 'black';
+            lapiz.beginPath();
+            lapiz.moveTo(210, 210);
+            lapiz.lineTo(188, 152);
+            lapiz.lineTo(210, 132);
+            lapiz.fill();
+
             //dibujo de un payaso usando figura geometricas
 
-            lapiz.fillStyle='blue';
+            lapiz.fillStyle = 'blue';
             lapiz.beginPath();
-            lapiz.ellipse(650, 190, 38, 48, 0, 0, Math.PI*2);
+            lapiz.ellipse(650, 190, 38, 48, 0, 0, Math.PI * 2);
             lapiz.fill();
 
             lapiz.strokeStyle = 'black';
@@ -198,12 +198,12 @@
 
             /*cara redonda*/
             lapiz.beginPath();
-            lapiz.arc(500, 220, 75, 0, Math.PI*2);
+            lapiz.arc(500, 220, 75, 0, Math.PI * 2);
             lapiz.fill();
             lapiz.stroke();
 
             /*nariz*/
-            lapiz.fillStyle='red';
+            lapiz.fillStyle = 'red';
             lapiz.beginPath();
             lapiz.arc(500, 223, 21, 0, Math.PI * 2);
             lapiz.fill();
@@ -223,26 +223,26 @@
             /*boca*/
             lapiz.lineCap = 'round'
             lapiz.beginPath();
-            lapiz.arc(500, 236, 42, 0.25, Math.PI-0.25);
+            lapiz.arc(500, 236, 42, 0.25, Math.PI - 0.25);
             lapiz.fill();
 
             /*parte de adentro de la boca*/
-            lapiz.fillStyle='black';
+            lapiz.fillStyle = 'black';
             lapiz.beginPath();
             lapiz.arc(500, 240, 35, 0.28, Math.PI - 0.28);
             lapiz.fill();
 
             /*ojos*/
             lapiz.beginPath();
-            lapiz.ellipse(470,190, 7, 10,0, 0, Math.PI*2);
-            lapiz.ellipse(530,190, 7, 10,0, 0, Math.PI*2);
+            lapiz.ellipse(470, 190, 7, 10, 0, 0, Math.PI * 2);
+            lapiz.ellipse(530, 190, 7, 10, 0, 0, Math.PI * 2);
             lapiz.fill();
 
             /*pupila*/
-            lapiz.fillStyle='white';
+            lapiz.fillStyle = 'white';
             lapiz.beginPath();
-            lapiz.arc(468, 185, 3.5, 0, Math.PI*2);
-            lapiz.arc(528, 185, 3.5, 0, Math.PI*2);
+            lapiz.arc(468, 185, 3.5, 0, Math.PI * 2);
+            lapiz.arc(528, 185, 3.5, 0, Math.PI * 2);
             lapiz.fill();
 
             /*pomulos*/
@@ -251,8 +251,6 @@
             lapiz.ellipse(455, 228, 22, 12, 0, 0, Math.PI * 2);
             lapiz.ellipse(545, 228, 22, 12, 0, 0, Math.PI * 2);
             lapiz.fill();
-
-
         }
     </script>
 </head>
