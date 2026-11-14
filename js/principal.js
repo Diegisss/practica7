@@ -1,6 +1,6 @@
 var maximo, minimo, tamañoFuente, aumento, decremento, fuente;
 
-maximo = 40; minimo = 10;
+maximo = 35; minimo = 10;
 
 $(document).ready(function() {
     $("#subir").click(function() {
