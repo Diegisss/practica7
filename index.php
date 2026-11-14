@@ -17,6 +17,6 @@
     </div>
     <div class="controles">
         <p><span id="subir">Aumentar</span></p><br>
-        <p><span id="subir">Disminuir</span></p>
+        <p><span id="bajar">Disminuir</span></p>
     </div>
 </body>
